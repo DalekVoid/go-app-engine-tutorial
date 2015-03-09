@@ -25,7 +25,7 @@ func init() {
 }
 
 func root(w http.ResponseWriter, r *http.Request) {
-  fmt.FPrint(w, "Hello World!")
+  fmt.Fprint(w, "Hello World!")
 }
 
 /*
