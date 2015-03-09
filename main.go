@@ -4,6 +4,7 @@ import (
         "html/template"
         "net/http"
         "time"
+        "fmt"
 
         "appengine"
         "appengine/datastore"
@@ -24,7 +25,7 @@ func init() {
 }
 
 func root(w http.ResponseWriter, r *http.Request) {
-  w.Print("Hello World!")
+  fmt.FPrint(w, "Hello World!")
 }
 
 /*
