@@ -20,9 +20,14 @@ type Greeting struct {
 
 func init() {
         http.HandleFunc("/", root)
-        http.HandleFunc("/sign", sign)
+//        http.HandleFunc("/sign", sign)
 }
 
+func root(w http.ResponseWriter, r *http.Request) {
+  w.Print("Hello World!")
+}
+
+/*
 // guestbookKey returns the key used for all guestbook entries.
 func guestbookKey(c appengine.Context) *datastore.Key {
         // The string "default_guestbook" here could be varied to have multiple guestbooks.
@@ -98,3 +103,4 @@ func sign(w http.ResponseWriter, r *http.Request) {
         http.Redirect(w, r, "/", http.StatusFound)
 }
 // [END func_sign]
+*/
