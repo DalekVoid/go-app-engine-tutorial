@@ -1,14 +1,16 @@
 package guestbook
 
 import (
-        "html/template"
+        // "html/template"
         "net/http"
         "time"
         "fmt"
 
+        /*
         "appengine"
         "appengine/datastore"
         "appengine/user"
+        */
 )
 
 // [START greeting_struct]
